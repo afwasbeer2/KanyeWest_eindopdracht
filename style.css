@@ -558,6 +558,7 @@ a{
   .spotify{
     width: 40vw;
     height: 50vh;
+    border-radius:12px;
   }
 
 .GradTekst {
