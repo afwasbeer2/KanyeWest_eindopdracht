@@ -48,6 +48,22 @@ html {
   
 }
 
+#homeYeez{
+  background-image: url("images/yeezuswallpaper.png");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+a{
+  text-decoration: none;
+}
   .buttonHome {
     background-color: #c8bca8;
     border-radius: 15px;
@@ -70,6 +86,15 @@ html {
     background-color: #ee2340;
     border-radius: 15px;
     color: #FFFFFF;
+    font-size: 30px;
+    padding: 16px 24px;
+    text-align: center;
+  } 
+
+  .buttonYeez {
+    background-color: red;
+    border-radius: 15px;
+    color: white;
     font-size: 30px;
     padding: 16px 24px;
     text-align: center;
@@ -137,6 +162,11 @@ html {
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: #ee2340;
   }
+  .navbarYeez {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    background-color: #dbdbdb;
+  }
   
   .nav-container {
     display: flex;
@@ -155,6 +185,10 @@ html {
   .navbarTwis .menu-items {
     display: flex;
   }
+
+  .navbarYeez .menu-items {
+    display: flex;
+  }
   
   .navbar .nav-container li {
     list-style: none;
@@ -165,6 +199,9 @@ html {
   }
 
   .navbarTwis .nav-container li {
+    list-style: none;
+  }
+  .navbarYeez .nav-container li {
     list-style: none;
   }
   
@@ -194,6 +231,15 @@ html {
     padding: 0.7rem;
     color: white;
   }
+
+  .navbarYeez .nav-container a {
+    text-decoration: none;
+    color: #0e2431;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    color: black;
+  }
   
   .navbar .nav-container a:hover{
       font-weight: bolder;
@@ -210,6 +256,12 @@ html {
   .navbarTwis .nav-container a:hover{
     font-weight: bolder;
     background-color: #8f1829;
+    border-radius: 10px;
+  }
+
+  .navbarYeez .nav-container a:hover{
+    font-weight: bolder;
+    background-color: #a8a7a7;
     border-radius: 10px;
   }
   
@@ -311,6 +363,21 @@ html {
     border-radius: 0px 0px 0px 25px ;
   }
 
+  .navbarYeez .menu-items {
+    position: fixed;
+    right: 0;
+    padding-top: 120px;
+    background-color: #dbdbdb;
+    height: 20vw;
+    width: 20vw;
+    transform: translateX(150%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    border-radius: 0px 0px 0px 25px ;
+  }
+
   
   .navbar .menu-items li {
     margin-bottom: 1.2rem;
@@ -331,6 +398,13 @@ html {
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
+  }
+
+  .navbarYeez .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
   }
   
   .logo {
@@ -448,7 +522,72 @@ html {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #de8e9a;
+    background-color: #f6d7db;
+  }
+
+  #yeezus {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+
+  #footerGrad {
+    background-color: purple;
+  }
+
+  #footerTwis{
+    background-color: #ee2340;
+  }
+
+  #footerYeez {
+    background-color: white;
+    color: black;
+  }
+
+  #footerYeez .row a{
+    color: black;
+  }
+
+  #footerYeez .row{
+    color: black;
+  }
+
+  .spotify{
+    width: 40vw;
+    height: 50vh;
+  }
+
+.GradTekst {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .TwisTekst {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .YeezTekst {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
   }
     
 
