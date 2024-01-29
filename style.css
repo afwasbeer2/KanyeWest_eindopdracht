@@ -7,7 +7,7 @@
 html {
     scroll-behavior: smooth;
   }
-#home {
+#home, #homeGrad, #homeYeezy, #homeYeez  {
     background-image: url("images/kanyewallpaper.png");
     background-color: #cccccc;
     height: 100vh;
@@ -18,53 +18,24 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 #homeGrad{
     background-image: url("images/graduationwallpaper.jpg");
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     
 }
-#homeTwis{
-  background-image: url("images/twistedwallpaper.jpeg");
-  background-color: #cccccc;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
+#homeYeezy{
+  background-image: url("images/yeezywallpaper.jpg");
 }
 
 #homeYeez{
   background-image: url("images/yeezuswallpaper.png");
-  background-color: #cccccc;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
 }
+
 a{
   text-decoration: none;
 }
-  .buttonHome {
+  .buttonHome, .buttonGrad, .buttonYeezy, .buttonYeez{
     background-color: #c8bca8;
     border-radius: 15px;
     color: #FFFFFF;
@@ -75,29 +46,14 @@ a{
 
   .buttonGrad {
     background-color: purple;
-    border-radius: 15px;
-    color: #FFFFFF;
-    font-size: 30px;
-    padding: 16px 24px;
-    text-align: center;
   } 
 
-  .buttonTwis {
-    background-color: #ee2340;
-    border-radius: 15px;
-    color: #FFFFFF;
-    font-size: 30px;
-    padding: 16px 24px;
-    text-align: center;
+  .buttonYeezy {
+    background-color: #171717;
   } 
 
   .buttonYeez {
     background-color: red;
-    border-radius: 15px;
-    color: white;
-    font-size: 30px;
-    padding: 16px 24px;
-    text-align: center;
   } 
 
 .arrow {
@@ -110,8 +66,10 @@ a{
     display: block;
     width: 1.5vw;
     height: 1.5vw;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
+    border-radius: 10%;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    box-shadow: 1px 1px;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
@@ -145,26 +103,19 @@ a{
     margin: auto;
   }
   
-  .navbar {
+  .navbar, .navbarGrad, .navbarYeezy, .navbarYeez{
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: #c8bca8;
   }
 
   .navbarGrad {
-    width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: purple;
   }
-
-  .navbarTwis {
-    width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    background-color: #ee2340;
+  .navbarYeezy {
+    background-color: #171717;
   }
   .navbarYeez {
-    width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: #dbdbdb;
   }
   
@@ -175,37 +126,16 @@ a{
     height: 62px;
   }
   
-  .navbar .menu-items {
-    display: flex;
-  }
-  .navbarGrad .menu-items {
-    display: flex;
-  }
-
-  .navbarTwis .menu-items {
-    display: flex;
-  }
-
-  .navbarYeez .menu-items {
+  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarYeez .menu-items {
     display: flex;
   }
   
-  .navbar .nav-container li {
+  .navbar .nav-container li, .navbarGrad .nav-container li, .navbarYeezy .nav-container li, .navbarYeez .nav-container li {
     list-style: none;
   }
 
-  .navbarGrad .nav-container li {
-    list-style: none;
-  }
-
-  .navbarTwis .nav-container li {
-    list-style: none;
-  }
-  .navbarYeez .nav-container li {
-    list-style: none;
-  }
   
-  .navbar .nav-container a {
+  .navbar .nav-container a, .navbarGrad .nav-container a, .navbarYeezy .nav-container a, .navbarYeez .nav-container a {
     text-decoration: none;
     color: #0e2431;
     font-weight: 500;
@@ -214,55 +144,23 @@ a{
     color: white;
   }
 
-  .navbarGrad .nav-container a {
-    text-decoration: none;
-    color: #0e2431;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-    color: white;
-  }
 
-  .navbarTwis .nav-container a {
-    text-decoration: none;
-    color: #0e2431;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-    color: white;
-  }
-
-  .navbarYeez .nav-container a {
-    text-decoration: none;
-    color: #0e2431;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-    color: black;
-  }
-  
-  .navbar .nav-container a:hover{
+  .navbar .nav-container a:hover, .navbarGrad .nav-container a:hover, .navbarYeezy .nav-container a:hover, .navbarYeez .nav-container a:hover{
       font-weight: bolder;
       background-color: #a6967c;
       border-radius: 10px;
   }  
   
   .navbarGrad .nav-container a:hover{
-    font-weight: bolder;
     background-color: #550761;
-    border-radius: 10px;
   }
 
-  .navbarTwis .nav-container a:hover{
-    font-weight: bolder;
-    background-color: #8f1829;
-    border-radius: 10px;
+  .navbarYeezy .nav-container a:hover{
+    background-color: black;
   }
 
   .navbarYeez .nav-container a:hover{
-    font-weight: bolder;
     background-color: #a8a7a7;
-    border-radius: 10px;
   }
   
   .nav-container {
@@ -318,7 +216,7 @@ a{
     transition: transform 0.4s ease-in-out;
   }
   
-  .navbar .menu-items {
+  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarYeez .menu-items {
     position: fixed;
     right: 0;
     padding-top: 120px;
@@ -334,66 +232,19 @@ a{
   }
 
   .navbarGrad .menu-items {
-    position: fixed;
-    right: 0;
-    padding-top: 120px;
     background-color: purple;
-    height: 20vw;
-    width: 20vw;
-    transform: translateX(150%);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-    border-radius: 0px 0px 0px 25px ;
   }
 
-  .navbarTwis .menu-items {
-    position: fixed;
-    right: 0;
-    padding-top: 120px;
-    background-color: #ee2340;
-    height: 20vw;
-    width: 20vw;
-    transform: translateX(150%);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-    border-radius: 0px 0px 0px 25px ;
+  .navbarYeezy .menu-items {
+    background-color: #171717;
   }
 
   .navbarYeez .menu-items {
-    position: fixed;
-    right: 0;
-    padding-top: 120px;
     background-color: #dbdbdb;
-    height: 20vw;
-    width: 20vw;
-    transform: translateX(150%);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-    border-radius: 0px 0px 0px 25px ;
   }
 
   
-  .navbar .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: white;
-  }
-
-  .navbarGrad .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: white;
-  }
-
-  .navbarTwis .menu-items li {
+  .navbar .menu-items li, .navbarGrad .menu-items li, .navbarYeezy .menu-items li, .navbarYeez .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -401,9 +252,6 @@ a{
   }
 
   .navbarYeez .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
     color: black;
   }
   
@@ -411,8 +259,9 @@ a{
     position: absolute;
     top: 15px;
     left: 15px;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: white;
+    font-weight: bold;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -484,7 +333,7 @@ a{
     margin:0% 3%;
     }
     }
-  #albums {
+  #albums, #yeezys {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -493,21 +342,32 @@ a{
     background-color: #ede9da;
   }
 
-  #albums h2{
+  #yeezys {
+    background-color: white;
+  }
+
+
+  #albums h2, #yeezys h2{
     text-align: center;
     font-size: 30px;
   }
   #albums img{
     height: 40vh;
-    width: auto;
+    width: 400px;
     transition: transform .2s;
     border-radius: 10px;
   }
+
+  #yeezys img{
+    height: 50vh;
+    width: 500px;
+  }
+
   #albums img:hover {
     transform: scale(1.5);
   }
 
-  #graduation {
+  #graduation, #yeezy, #yeezus {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -516,21 +376,7 @@ a{
     background-color: #fad9ff;
   }
 
-  #twisted {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f6d7db;
-  }
-
-  #yeezus {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  #yeezy {
     background-color: whitesmoke;
   }
 
@@ -538,8 +384,8 @@ a{
     background-color: purple;
   }
 
-  #footerTwis{
-    background-color: #ee2340;
+  #footerYeezy{
+    background-color: #171717;
   }
 
   #footerYeez {
@@ -561,35 +407,36 @@ a{
     border-radius:12px;
   }
 
-.GradTekst {
+.GradTekst, .YeezTekst, .YeezyTekst {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 50vw;
+    width: 30vw;
     background-color: white;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
+    font-size: 1.5rem;
   }
 
-  .TwisTekst {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .YeezyTekst{
     width: 50vw;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
   }
 
-  .YeezTekst {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50vw;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+  .YeezyTekst p{
+    margin: 20px;
   }
+
+  .yeezyKop{
+    font-weight: bolder;
+  }
+  .GradTekst h2, .YeezyTekst h3{
+    display: flex;
+    justify-content: center;
+  }
+  .GradTekst ul{
+    list-style-type: none;
+  }
+
+
     
 
   
