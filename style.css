@@ -7,7 +7,7 @@
 html {
     scroll-behavior: smooth;
   }
-#home, #homeGrad, #homeYeezy, #homeYeez  {
+#home, #homeGrad, #homeYeezy, #homeKanye  {
     background-image: url("images/kanyewallpaper.png");
     background-color: #cccccc;
     height: 100vh;
@@ -28,14 +28,14 @@ html {
   background-image: url("images/yeezywallpaper.jpg");
 }
 
-#homeYeez{
-  background-image: url("images/yeezuswallpaper.png");
+#homeKanye{
+  background-image: url("images/kanyewestwallpaper.jpg");
 }
 
 a{
   text-decoration: none;
 }
-  .buttonHome, .buttonGrad, .buttonYeezy, .buttonYeez{
+  .buttonHome, .buttonGrad, .buttonYeezy, .buttonKanye{
     background-color: #c8bca8;
     border-radius: 15px;
     color: #FFFFFF;
@@ -52,7 +52,7 @@ a{
     background-color: #171717;
   } 
 
-  .buttonYeez {
+  .buttonKanye {
     background-color: red;
   } 
 
@@ -103,7 +103,7 @@ a{
     margin: auto;
   }
   
-  .navbar, .navbarGrad, .navbarYeezy, .navbarYeez{
+  .navbar, .navbarGrad, .navbarYeezy, .navbarKanye{
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: #c8bca8;
@@ -115,8 +115,8 @@ a{
   .navbarYeezy {
     background-color: #171717;
   }
-  .navbarYeez {
-    background-color: #dbdbdb;
+  .navbarKanye {
+    background-color: red;
   }
   
   .nav-container {
@@ -126,16 +126,16 @@ a{
     height: 62px;
   }
   
-  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarYeez .menu-items {
+  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarKanye .menu-items {
     display: flex;
   }
   
-  .navbar .nav-container li, .navbarGrad .nav-container li, .navbarYeezy .nav-container li, .navbarYeez .nav-container li {
+  .navbar .nav-container li, .navbarGrad .nav-container li, .navbarYeezy .nav-container li, .navbarKanye .nav-container li {
     list-style: none;
   }
 
   
-  .navbar .nav-container a, .navbarGrad .nav-container a, .navbarYeezy .nav-container a, .navbarYeez .nav-container a {
+  .navbar .nav-container a, .navbarGrad .nav-container a, .navbarYeezy .nav-container a, .navbarKanye .nav-container a {
     text-decoration: none;
     color: #0e2431;
     font-weight: 500;
@@ -145,7 +145,7 @@ a{
   }
 
 
-  .navbar .nav-container a:hover, .navbarGrad .nav-container a:hover, .navbarYeezy .nav-container a:hover, .navbarYeez .nav-container a:hover{
+  .navbar .nav-container a:hover, .navbarGrad .nav-container a:hover, .navbarYeezy .nav-container a:hover, .navbarKanye .nav-container a:hover{
       font-weight: bolder;
       background-color: #a6967c;
       border-radius: 10px;
@@ -159,8 +159,8 @@ a{
     background-color: black;
   }
 
-  .navbarYeez .nav-container a:hover{
-    background-color: #a8a7a7;
+  .navbarKanye .nav-container a:hover{
+    background-color: rgb(250, 68, 68);
   }
   
   .nav-container {
@@ -216,7 +216,7 @@ a{
     transition: transform 0.4s ease-in-out;
   }
   
-  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarYeez .menu-items {
+  .navbar .menu-items, .navbarGrad .menu-items, .navbarYeezy .menu-items, .navbarKanye .menu-items {
     position: fixed;
     right: 0;
     padding-top: 120px;
@@ -239,19 +239,19 @@ a{
     background-color: #171717;
   }
 
-  .navbarYeez .menu-items {
-    background-color: #dbdbdb;
+  .navbarKanye .menu-items {
+    background-color: red;
   }
 
   
-  .navbar .menu-items li, .navbarGrad .menu-items li, .navbarYeezy .menu-items li, .navbarYeez .menu-items li {
+  .navbar .menu-items li, .navbarGrad .menu-items li, .navbarYeezy .menu-items li, .navbarKanye .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: white;
   }
 
-  .navbarYeez .menu-items li {
+  .navbarKanye .menu-items li {
     color: black;
   }
   
@@ -333,13 +333,21 @@ a{
     margin:0% 3%;
     }
     }
-  #albums, #yeezys {
+  #albums, #yeezys, #grammy, #boyfriend {
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: #ede9da;
+  }
+
+  #grammy {
+    background-color: whitesmoke;
+  }
+
+  #boyfriend {
+    background-color: rgb(212, 212, 212);
   }
 
   #yeezys {
@@ -363,11 +371,15 @@ a{
     width: 500px;
   }
 
+  #Kanye img{
+    border-radius: 10%;
+  }
+
   #albums img:hover {
     transform: scale(1.5);
   }
 
-  #graduation, #yeezy, #yeezus {
+  #graduation, #yeezy, #Kanye {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -380,12 +392,16 @@ a{
     background-color: whitesmoke;
   }
 
+  #Kanye {
+    background-color: white;
+  }
+
   #footerGrad {
     background-color: purple;
   }
 
-  #footerYeezy{
-    background-color: #171717;
+  #footerKanye{
+    background-color: red;
   }
 
   #footerYeez {
@@ -405,9 +421,10 @@ a{
     width: 40vw;
     height: 50vh;
     border-radius:12px;
+    border: 0;
   }
 
-.GradTekst, .YeezTekst, .YeezyTekst {
+.GradTekst, .KanyeTekst, .YeezyTekst, .grammyTekst, .boyfriendTekst {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -415,6 +432,11 @@ a{
     padding: 50px;
     border-radius: 10px;
     font-size: 1.5rem;
+  }
+
+  .KanyeTekst{
+    width: 60vw;
+    text-align: center;
   }
 
   .YeezyTekst{
@@ -428,12 +450,20 @@ a{
   .yeezyKop{
     font-weight: bolder;
   }
-  .GradTekst h2, .YeezyTekst h3{
+  .GradTekst h2, .YeezyTekst h3, .KanyeTekst h2, .grammyTekst h2, .boyfriendTekst h2{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
   .GradTekst ul{
     list-style-type: none;
+  }
+
+  .video{
+    width: 40vw;
+    height: 50vh;
+    border: 0;
+    border-radius: 12px;
   }
 
 
